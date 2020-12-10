@@ -64,7 +64,7 @@ for ticker in tickers:
 
     html = BeautifulSoup(response, features='html.parser')
     news_tab = html.find(id='news-table')
-    news_arts[ticker] = news_table
+    news_arts[ticker] = news_tab
     
 parsed_data = []
 
